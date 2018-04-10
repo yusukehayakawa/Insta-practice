@@ -12,6 +12,11 @@
 		70AEA12B207C52E2009C3CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AEA129207C52E2009C3CF6 /* Main.storyboard */; };
 		70AEA12D207C52E4009C3CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AEA12C207C52E4009C3CF6 /* Assets.xcassets */; };
 		70AEA130207C52E4009C3CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AEA12E207C52E4009C3CF6 /* LaunchScreen.storyboard */; };
+		70AEA138207C7EB6009C3CF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEA137207C7EB6009C3CF6 /* LoginViewController.swift */; };
+		70AEA13A207C7F0B009C3CF6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEA139207C7F0B009C3CF6 /* HomeViewController.swift */; };
+		70AEA13C207C7F1E009C3CF6 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEA13B207C7F1E009C3CF6 /* ImageSelectViewController.swift */; };
+		70AEA13E207C7F31009C3CF6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEA13D207C7F31009C3CF6 /* PostViewController.swift */; };
+		70AEA140207C7F43009C3CF6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEA13F207C7F43009C3CF6 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		70AEA12C207C52E4009C3CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70AEA12F207C52E4009C3CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70AEA131207C52E4009C3CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AEA137207C7EB6009C3CF6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70AEA139207C7F0B009C3CF6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		70AEA13B207C7F1E009C3CF6 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		70AEA13D207C7F31009C3CF6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		70AEA13F207C7F43009C3CF6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				70AEA12C207C52E4009C3CF6 /* Assets.xcassets */,
 				70AEA12E207C52E4009C3CF6 /* LaunchScreen.storyboard */,
 				70AEA131207C52E4009C3CF6 /* Info.plist */,
+				70AEA137207C7EB6009C3CF6 /* LoginViewController.swift */,
+				70AEA139207C7F0B009C3CF6 /* HomeViewController.swift */,
+				70AEA13B207C7F1E009C3CF6 /* ImageSelectViewController.swift */,
+				70AEA13D207C7F31009C3CF6 /* PostViewController.swift */,
+				70AEA13F207C7F43009C3CF6 /* SettingViewController.swift */,
 			);
 			path = "Insta-practice";
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AEA13E207C7F31009C3CF6 /* PostViewController.swift in Sources */,
+				70AEA138207C7EB6009C3CF6 /* LoginViewController.swift in Sources */,
 				70AEA128207C52E2009C3CF6 /* ViewController.swift in Sources */,
 				70AEA126207C52E2009C3CF6 /* AppDelegate.swift in Sources */,
+				70AEA13C207C7F1E009C3CF6 /* ImageSelectViewController.swift in Sources */,
+				70AEA140207C7F43009C3CF6 /* SettingViewController.swift in Sources */,
+				70AEA13A207C7F0B009C3CF6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.hayakawa.yusuke.Insta-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.hayakawa.yusuke.Insta-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
