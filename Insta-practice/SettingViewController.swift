@@ -7,9 +7,20 @@
 //
 
 import UIKit
+import ESTabBarController
+import Firebase
+import FirebaseAuth
+import SVProgressHUD
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var displayNameTextField: UITextField!
+
+    @IBAction func handleChangeButton(_ sender: Any) {
+    }
+    @IBAction func handleLogoutButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +31,13 @@ class SettingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // 表示名を取得してTextFieldに設定する
+        let user = Auth.auth().currentUser
+        if let user = user {
+            displayNameTextField.text = user.displayName
+        }
     }
-    */
-
 }

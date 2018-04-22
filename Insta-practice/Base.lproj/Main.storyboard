@@ -93,6 +93,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="QVV-Pt-QHu"/>
                                 </constraints>
                                 <state key="normal" title="表示名を変更" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleChangeButton:" destination="TMC-DG-OqI" eventType="touchUpInside" id="ZWe-02-Z29"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-KS-SHC">
                                 <rect key="frame" x="37.5" y="190" width="300" height="40"/>
@@ -100,6 +103,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="L2e-KX-da1"/>
                                 </constraints>
                                 <state key="normal" title="ログアウト" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleLogoutButton:" destination="TMC-DG-OqI" eventType="touchUpInside" id="tUc-Lw-cN3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,6 +119,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4az-2h-RXm"/>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="Rpi-Kq-tel" id="k7n-Bv-apZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29E-fu-kOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
