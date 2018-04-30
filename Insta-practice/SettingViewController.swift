@@ -45,7 +45,19 @@ class SettingViewController: UIViewController {
         // キーボードを閉じる
         self.view.endEditing(true)
     }
+
+    // ログアウトボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleLogoutButton(_ sender: Any) {
+        // ログアウトする
+        try! Auth.auth().signOut()
+        
+        // ログイン画面の表示
+        let loginViewController = self.storyborad?.instantiateViewController(withIdentifier: "Login")
+        self.present(loginViewController!, animated: true, completion: nil)
+
+        // ログイン画面から戻ってきた時のためにホーム画面(index = 0)を選択している状態にしておく
+        let tabBArController = parent as! ESTabBarController
+        tabBArController.setSelectedIndex(0, animated: false)
     }
     
     override func viewDidLoad() {
