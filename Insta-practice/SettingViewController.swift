@@ -21,7 +21,7 @@ class SettingViewController: UIViewController {
 
             // 表示名が入力されていないときはHUDを出して何もしない
             if displayName.isEmpty {
-                SVProgressHUD.isEmptyshowError(withStatus: "表示名を入力してください")
+                SVProgressHUD.showError(withStatus: "表示名を入力してください")
                 return
             }
 
@@ -36,7 +36,8 @@ class SettingViewController: UIViewController {
                     }
                     print("DEBUG_PRINT: [displayName = \(String(describing: user.displayName))]の設定に成功しました。")
 
-                        SVProgressHUD.showSuccess(withStatue: "表示名を変更しました")
+                        // HUDで完了を知らせる
+                        SVProgressHUD.showSuccess(withStatus: "表示名を変更しました")
                  }
             } else {
                 print("DEBUG_PRINT: displayNameの設定に失敗しました")
