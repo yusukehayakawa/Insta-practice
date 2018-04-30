@@ -42,7 +42,7 @@ class SettingViewController: UIViewController {
                 print("DEBUG_PRINT: displayNameの設定に失敗しました")
             }
         }
-
+        // キーボードを閉じる
         self.view.endEditing(true)
     }
     @IBAction func handleLogoutButton(_ sender: Any) {
