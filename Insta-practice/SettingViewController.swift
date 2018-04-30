@@ -17,6 +17,33 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var displayNameTextField: UITextField!
 
     @IBAction func handleChangeButton(_ sender: Any) {
+        if let displayName = displayNameTextField.text {
+
+            // 表示名が入力されていないときはHUDを出して何もしない
+            if displayName.isEmpty {
+                SVProgressHUD.isEmptyshowError(withStatus: "表示名を入力してください")
+                return
+            }
+
+            // 表示名を設定する
+            let user = Auth.auth().currentUser
+            if let user = user {
+                let changeRequest = user.createProfileChangeRequest()
+                changeRequest.displayName = displayName
+                changeRequest.commitChanges { error in
+                    if let error = error {
+                        print("DEBUG_PRINT: " + error.localizedDescription)
+                    }
+                    print("DEBUG_PRINT: [displayName = \(String(describing: user.displayName))]の設定に成功しました。")
+
+                        SVProgressHUD.showSuccess(withStatue: "表示名を変更しました")
+                 }
+            } else {
+                print("DEBUG_PRINT: displayNameの設定に失敗しました")
+            }
+        }
+
+        self.view.endEditing(true)
     }
     @IBAction func handleLogoutButton(_ sender: Any) {
     }
