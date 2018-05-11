@@ -47,7 +47,26 @@
                     <view key="view" contentMode="scaleToFill" id="Nvb-FI-DS5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-MG-eHK">
+                                <rect key="frame" x="164.5" y="138" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOp-Ha-989">
+                                <rect key="frame" x="164.5" y="216" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S1-fK-dV0">
+                                <rect key="frame" x="164" y="297" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eOp-Ha-989" firstAttribute="centerX" secondItem="Nvb-FI-DS5" secondAttribute="centerX" id="j5r-Ms-etG"/>
+                            <constraint firstItem="0S1-fK-dV0" firstAttribute="centerX" secondItem="Nvb-FI-DS5" secondAttribute="centerX" id="lla-em-3RN"/>
+                            <constraint firstItem="XET-MG-eHK" firstAttribute="centerX" secondItem="Nvb-FI-DS5" secondAttribute="centerX" id="mht-lG-Uej"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQu-eU-uI9"/>
                     </view>
                 </viewController>
